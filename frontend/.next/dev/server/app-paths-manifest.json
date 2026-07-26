@@ -1,5 +1,4 @@
 {
-  "/register/page": "app/register/page.js",
   "/profile/page": "app/profile/page.js",
   "/upload/page": "app/upload/page.js",
   "/favorites/page": "app/favorites/page.js",
