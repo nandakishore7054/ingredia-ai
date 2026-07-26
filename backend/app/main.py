@@ -18,6 +18,10 @@ from app.utils.auth_dependency import get_current_user
 
 app = FastAPI(title="Intelligent Recipe Generator")
 
+# Initialize database tables
+from app.db.database import engine, Base
+Base.metadata.create_all(bind=engine)
+
 # -------------------- ROUTERS --------------------
 app.include_router(auth.router)
 app.include_router(favorites.router)

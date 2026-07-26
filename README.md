@@ -67,7 +67,7 @@ By integrating **Roboflow Object Detection (YOLO)** with **Hybrid LLM Intelligen
 ## 📂 Folder Structure
 
 ```
-intelligent_recipe_generator/
+ingredia-ai/
 ├── backend/
 │   ├── app/
 │   │   ├── db/              # SQLAlchemy models & SQLite database session

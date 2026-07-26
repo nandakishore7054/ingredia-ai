@@ -8,6 +8,9 @@ os.makedirs(DB_DIR, exist_ok=True)
 
 DEFAULT_DB_PATH = os.path.join(DB_DIR, "recipes.db")
 
+# Ensure the database directory exists
+os.makedirs(os.path.dirname(DEFAULT_DB_PATH), exist_ok=True)
+
 # PostgreSQL Migration Prep: Check for env var first, fallback to SQLite
 DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{DEFAULT_DB_PATH}")
 
