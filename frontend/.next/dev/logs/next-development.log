@@ -1,0 +1,251 @@
+[00:00:03.773] Server  LOG     ✓ Ready in 3s
+[00:00:16.266] Server  LOG     ○ Compiling / ...
+[00:00:26.260] Server  WARN    Browserslist: browsers data (caniuse-lite) is 7 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[00:00:39.001] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:10.604] Server  LOG     ○ Compiling /upload ...
+[00:21:49.734] Server  WARN    ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:22:00.888] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:43.338] Server  WARN    ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:22:46.376] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:30.913] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:37.894] Server  LOG     ○ Compiling /login ...
+[00:23:39.078] Server  WARN    ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:23:40.556] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:40.673] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <Head>
+        <__next_root_layout_boundary__>
+          <SegmentViewNode type="layout" pagePath="layout.tsx">
+            <SegmentTrieNode>
+            <link>
+            <RootLayout>
+              <html lang="en">
+                <body suppressHydrationWarning={true}>
+                  <AuthProvider>
+                    <AppProvider>
+                      <Fe>
+                      <Navbar>
+                      ...
+                        <LoginPage params={Promise} searchParams={Promise}>
+                          <div className="min-h-scre...">
+                            <motion.form onSubmit={function handleLogin} initial={{opacity:0,y:40}} ...>
+                              <form onSubmit={function handleLogin} className="bg-white s..." style={{opacity:0, ...}} ...>
+                                <h1>
+                                <input
+                                  type="email"
+                                  placeholder="Email"
+                                  required={true}
+                                  value=""
+                                  onChange={function onChange}
+                                  className="w-full mb-4 border rounded-xl px-4 py-2"
+-                                 fdprocessedid="9de0va"
+                                >
+                                <input
+                                  type="password"
+                                  placeholder="Password"
+                                  required={true}
+                                  value=""
+                                  onChange={function onChange}
+                                  className="w-full mb-6 border rounded-xl px-4 py-2"
+-                                 fdprocessedid="5v8fpm"
+                                >
+                                <button
+                                  disabled={false}
+                                  className="w-full bg-green-600 text-white py-2 rounded-xl"
+-                                 fdprocessedid="c020nt"
+                                >
++                                 Login
+                      <Chatbot>
+                        <div className="fixed bott...">
+                          <AnimatePresence>
+                          <motion.button whileHover={{scale:1.05}} whileTap={{scale:0.95}} onClick={function onClick} ...>
+                            <button
+                              onClick={function onClick}
+                              className="w-14 h-14 bg-gray-900 text-white rounded-full shadow-xl flex items-center jus..."
+                              tabIndex={0}
+                              style={{}}
+                              ref={function useMotionRef.useCallback}
+-                             fdprocessedid="5u6zuc"
+                            >
+        ...
+
+[00:23:42.688] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:30.095] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:30.258] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <Head>
+        <__next_root_layout_boundary__>
+          <SegmentViewNode type="layout" pagePath="layout.tsx">
+            <SegmentTrieNode>
+            <link>
+            <RootLayout>
+              <html lang="en">
+                <body suppressHydrationWarning={true}>
+                  <AuthProvider>
+                    <AppProvider>
+                      <Fe>
+                      <Navbar>
+                      ...
+                        <LoginPage params={Promise} searchParams={Promise}>
+                          <div className="min-h-scre...">
+                            <motion.form onSubmit={function handleLogin} initial={{opacity:0,y:40}} ...>
+                              <form onSubmit={function handleLogin} className="bg-white s..." style={{opacity:0, ...}} ...>
+                                <h1>
+                                <input
+                                  type="email"
+                                  placeholder="Email"
+                                  required={true}
+                                  value=""
+                                  onChange={function onChange}
+                                  className="w-full mb-4 border rounded-xl px-4 py-2"
+-                                 fdprocessedid="80nt4"
+                                >
+                                <input
+                                  type="password"
+                                  placeholder="Password"
+                                  required={true}
+                                  value=""
+                                  onChange={function onChange}
+                                  className="w-full mb-6 border rounded-xl px-4 py-2"
+-                                 fdprocessedid="2fvgnb"
+                                >
+                                <button
+                                  disabled={false}
+                                  className="w-full bg-green-600 text-white py-2 rounded-xl"
+-                                 fdprocessedid="zxcrcef"
+                                >
++                                 Login
+                      <Chatbot>
+                        <div className="fixed bott...">
+                          <AnimatePresence>
+                          <motion.button whileHover={{scale:1.05}} whileTap={{scale:0.95}} onClick={function onClick} ...>
+                            <button
+                              onClick={function onClick}
+                              className="w-14 h-14 bg-gray-900 text-white rounded-full shadow-xl flex items-center jus..."
+                              tabIndex={0}
+                              style={{}}
+                              ref={function useMotionRef.useCallback}
+-                             fdprocessedid="0uicu"
+                            >
+        ...
+
+[00:25:17.801] Browser ERROR   Failed to load preferences {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://127.0.0.1:8000","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmMxMjNAZ21haWwuY29tIiwiZXhwIjoxNzg1MTM3OTI0fQ.JhEIUXfHjC5ZFhuyPeVxI9WArnTFHb3YcDIxzMxSPyk"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/preferences/","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (webpack-internal:///(app-pages-browser)/./node_modules/axios/lib/adapters/xhr.js:126:20)\n    at Axios.request (webpack-internal:///(app-pages-browser)/./node_modules/axios/lib/core/Axios.js:57:41)\n    at async fetchPreferences (webpack-internal:///(app-pages-browser)/./app/preferences/page.tsx:67:33)"}
+[00:25:17.999] Browser ERROR   Failed to load preferences {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://127.0.0.1:8000","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmMxMjNAZ21haWwuY29tIiwiZXhwIjoxNzg1MTM3OTI0fQ.JhEIUXfHjC5ZFhuyPeVxI9WArnTFHb3YcDIxzMxSPyk"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/preferences/","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (webpack-internal:///(app-pages-browser)/./node_modules/axios/lib/adapters/xhr.js:126:20)\n    at Axios.request (webpack-internal:///(app-pages-browser)/./node_modules/axios/lib/core/Axios.js:57:41)\n    at async fetchPreferences (webpack-internal:///(app-pages-browser)/./app/preferences/page.tsx:67:33)"}
+[00:28:31.884] Browser ERROR   Failed to load recommendations {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://127.0.0.1:8000","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmMxMjNAZ21haWwuY29tIiwiZXhwIjoxNzg1MTM3OTI0fQ.JhEIUXfHjC5ZFhuyPeVxI9WArnTFHb3YcDIxzMxSPyk"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/recommendations/personalized","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (webpack-internal:///(app-pages-browser)/./node_modules/axios/lib/adapters/xhr.js:126:20)\n    at Axios.request (webpack-internal:///(app-pages-browser)/./node_modules/axios/lib/core/Axios.js:57:41)\n    at async fetchRecs (webpack-internal:///(app-pages-browser)/./app/page.tsx:43:37)"}
+[00:28:31.885] Browser ERROR   Failed to load recommendations {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://127.0.0.1:8000","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmMxMjNAZ21haWwuY29tIiwiZXhwIjoxNzg1MTM3OTI0fQ.JhEIUXfHjC5ZFhuyPeVxI9WArnTFHb3YcDIxzMxSPyk"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/recommendations/personalized","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (webpack-internal:///(app-pages-browser)/./node_modules/axios/lib/adapters/xhr.js:126:20)\n    at Axios.request (webpack-internal:///(app-pages-browser)/./node_modules/axios/lib/core/Axios.js:57:41)\n    at async fetchRecs (webpack-internal:///(app-pages-browser)/./app/page.tsx:43:37)"}
+[00:29:28.513] Browser ERROR   Failed to load recommendations {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://127.0.0.1:8000","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmMxMjNAZ21haWwuY29tIiwiZXhwIjoxNzg1MTM3OTI0fQ.JhEIUXfHjC5ZFhuyPeVxI9WArnTFHb3YcDIxzMxSPyk"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/recommendations/personalized","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (webpack-internal:///(app-pages-browser)/./node_modules/axios/lib/adapters/xhr.js:126:20)\n    at Axios.request (webpack-internal:///(app-pages-browser)/./node_modules/axios/lib/core/Axios.js:57:41)\n    at async fetchRecs (webpack-internal:///(app-pages-browser)/./app/page.tsx:43:37)"}
+[00:29:28.513] Browser ERROR   Failed to load recommendations {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://127.0.0.1:8000","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmMxMjNAZ21haWwuY29tIiwiZXhwIjoxNzg1MTM3OTI0fQ.JhEIUXfHjC5ZFhuyPeVxI9WArnTFHb3YcDIxzMxSPyk"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/recommendations/personalized","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (webpack-internal:///(app-pages-browser)/./node_modules/axios/lib/adapters/xhr.js:126:20)\n    at Axios.request (webpack-internal:///(app-pages-browser)/./node_modules/axios/lib/core/Axios.js:57:41)\n    at async fetchRecs (webpack-internal:///(app-pages-browser)/./app/page.tsx:43:37)"}
+[00:29:44.733] Server  LOG     ○ Compiling /recipes/[name] ...
+[00:35:15.879] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:21.954] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:44.417] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:55.957] Server  LOG     ○ Compiling /preferences ...
+[00:45:47.583] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:50:07.852] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:50:13.843] Server  LOG     ○ Compiling /register ...
+[00:50:18.708] Server  WARN    ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:50:20.164] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:50:20.419] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <Head>
+        <__next_root_layout_boundary__>
+          <SegmentViewNode type="layout" pagePath="layout.tsx">
+            <SegmentTrieNode>
+            <link>
+            <RootLayout>
+              <html lang="en">
+                <body suppressHydrationWarning={true}>
+                  <AuthProvider>
+                    <AppProvider>
+                      <Fe>
+                      <Navbar>
+                      ...
+                        <LoginPage params={Promise} searchParams={Promise}>
+                          <div className="min-h-scre...">
+                            <motion.form onSubmit={function handleLogin} initial={{opacity:0,y:40}} ...>
+                              <form onSubmit={function handleLogin} className="bg-white s..." style={{opacity:0, ...}} ...>
+                                <h1>
+                                <input
+                                  type="email"
+                                  placeholder="Email"
+                                  required={true}
+                                  value=""
+                                  onChange={function onChange}
+                                  className="w-full mb-4 border rounded-xl px-4 py-2"
+-                                 fdprocessedid="ogj29e"
+                                >
+                                <input
+                                  type="password"
+                                  placeholder="Password"
+                                  required={true}
+                                  value=""
+                                  onChange={function onChange}
+                                  className="w-full mb-6 border rounded-xl px-4 py-2"
+-                                 fdprocessedid="2so778"
+                                >
+                                <button
+                                  disabled={false}
+                                  className="w-full bg-green-600 text-white py-2 rounded-xl"
+-                                 fdprocessedid="gc0y9"
+                                >
++                                 Login
+                      <Chatbot>
+                        <div className="fixed bott...">
+                          <AnimatePresence>
+                          <motion.button whileHover={{scale:1.05}} whileTap={{scale:0.95}} onClick={function onClick} ...>
+                            <button
+                              onClick={function onClick}
+                              className="w-14 h-14 bg-gray-900 text-white rounded-full shadow-xl flex items-center jus..."
+                              tabIndex={0}
+                              style={{}}
+                              ref={function useMotionRef.useCallback}
+-                             fdprocessedid="1bs5ic"
+                            >
+        ...
+
+[00:52:36.501] Server  LOG     ○ Compiling /recipes/[name] ...
+[00:57:17.264] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:57:24.123] Server  LOG     ○ Compiling /recipes ...
+[01:01:32.389] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:03:23.207] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

@@ -1,0 +1,35 @@
+path: ../dataset
+train: train/images
+val: valid/images
+test: test/images
+
+# Dynamic Class List — Extensible for future dataset expansion
+names:
+  - apple
+  - banana
+  - bell_pepper
+  - bread
+  - butter
+  - capsicum
+  - carrot
+  - cheese
+  - chicken
+  - chili
+  - egg
+  - garlic
+  - ginger
+  - lemon
+  - lentils
+  - milk
+  - onion
+  - oregano
+  - paneer
+  - pasta
+  - potato
+  - rice
+  - spinach
+  - tomato
+  - turmeric
+
+# Number of classes
+nc: 25

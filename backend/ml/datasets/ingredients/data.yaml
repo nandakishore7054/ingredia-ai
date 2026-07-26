@@ -1,0 +1,22 @@
+# YOLOv8/YOLO11 Dataset Configuration
+# This file dictates how the Ultralytics model reads your training data.
+
+path: ./datasets/ingredients  # dataset root dir
+train: train/images  # train images (relative to 'path')
+val: valid/images  # val images (relative to 'path')
+test: test/images # test images (optional)
+
+# Expand this array up to 50+ ingredients as you collect more data.
+# Note: Keep the exact order of elements, as YOLO relies on the array index (0, 1, 2...).
+names:
+  0: onion
+  1: potato
+  2: tomato
+  3: carrot
+  4: broccoli
+  5: chicken
+  6: beef
+  7: garlic
+  8: ginger
+  9: egg
+  10: bell_pepper
