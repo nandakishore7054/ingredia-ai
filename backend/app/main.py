@@ -22,6 +22,22 @@ app = FastAPI(title="Intelligent Recipe Generator")
 from app.db.database import engine, Base
 Base.metadata.create_all(bind=engine)
 
+# -------------------- CORS --------------------
+# CORSMiddleware should be added before routes to ensure preflight requests are handled correctly
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "http://localhost:3001",
+        "https://ingredia-ai-steel.vercel.app",
+    ],
+    allow_origin_regex=r"https://.*\.vercel\.app", # Allow all Vercel preview deployments
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # -------------------- ROUTERS --------------------
 app.include_router(auth.router)
 app.include_router(favorites.router)
@@ -32,15 +48,6 @@ app.include_router(recommendations.router)
 from app.routes import ai, recipes
 app.include_router(ai.router)
 app.include_router(recipes.router)
-
-# -------------------- CORS --------------------
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000", "http://localhost:3001"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 UPLOAD_DIR = "temp_uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
