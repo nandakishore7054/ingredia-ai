@@ -6,7 +6,7 @@ sqlalchemy
 httpx
 openai
 python-jose[cryptography]
-passlib[bcrypt]
+bcrypt
 pillow
 email-validator
 scikit-learn
