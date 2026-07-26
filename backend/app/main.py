@@ -20,7 +20,10 @@ app = FastAPI(title="Intelligent Recipe Generator")
 
 # Initialize database tables
 from app.db.database import engine, Base
+from app.db.seed_data import seed
+
 Base.metadata.create_all(bind=engine)
+seed() # Ensures initial recipes exist on Render
 
 # -------------------- CORS --------------------
 # CORSMiddleware should be added before routes to ensure preflight requests are handled correctly
